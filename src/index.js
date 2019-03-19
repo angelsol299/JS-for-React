@@ -1,15 +1,23 @@
 const person = {
   name: "angel",
   sport() {},
-  talk() {}
+  walk() {
+    console.log(this);
+  }
 };
 
+person.walk();
+
+const walk = person.walk;
+walk();
+
+/*
 person.sport();
 person.name = "";
 const targetMember = "name";
 person[targetMember.value] = "mario";
 
-/*
+
 //var => function
 //let => block
 //const => block
