@@ -1,13 +1,24 @@
-// const combined = first.concat(second);
-// const combined = [...first, "a", ...second, "b"];
+class Person {
+  constructor(name){
+    this.name = name;
+  }  
+  walk() {
+    console.log("walk");
+  }
+}
 
+const person = new Person('Angel');
+person.
+
+
+/*
 const first = { name: "angel" };
 const second = { job: "Dev" };
 
 const combined = { ...first, ...second, location: "Australia" };
 console.log(combined);
 
-/*
+
 const address = {
     street: '',
     city: '',
