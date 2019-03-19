@@ -1,3 +1,20 @@
+const colors = ["red", "green", "blue"];
+
+const items = colors.map(color => `<li>${color}</li>`);
+console.log(items);
+
+/*
+const person = {
+  talk() {
+    var self = this;
+    setTimeout(() => {
+      console.log("this", this);
+    }, 1000);
+  }
+};
+
+person.talk();
+
 const jobs = [
   { id: 1, isActive: true },
   { id: 2, isActive: true },
@@ -14,7 +31,7 @@ const unactiveJobs = jobs.filter(job => {
 
 console.log(unactiveJobs);
 
-/*
+
 const square = function(number) {
   return number * number;
 };
