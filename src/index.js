@@ -1,9 +1,31 @@
-const colors = ["red", "green", "blue"];
+// const combined = first.concat(second);
+// const combined = [...first, "a", ...second, "b"];
+
+const first = { name: "angel" };
+const second = { job: "Dev" };
+
+const combined = { ...first, ...second, location: "Australia" };
+console.log(combined);
+
+/*
+const address = {
+    street: '',
+    city: '',
+    country: ''
+};
+const street = address.street;
+const city = address.city;
+const country = address.country;
+
+const { street, city, country} = address;
+
+
+
+ const colors = ["red", "green", "blue"];
 
 const items = colors.map(color => `<li>${color}</li>`);
 console.log(items);
 
-/*
 const person = {
   talk() {
     var self = this;
